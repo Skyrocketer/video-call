@@ -2,6 +2,21 @@
 <html>
     <head>
         <title>{% block title %}{% endblock %}</title>
-        
+        <link rel="icon" type="image/x-icon" href="/static/">
+        <style>
+            :root{
+                --bg-main: #065897;
+                --accent: #009ADA;
+                --bg-content: #233444;
+            }
+            html, body{
+                background-color: var(--bg-main);
+                padding: 0;
+                margin: 0;
+            }
+        </style>
     </head>
+    <body>
+        {% block body %}{% endblock %}
+    </body>
 </html>
